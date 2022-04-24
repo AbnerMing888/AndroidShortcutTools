@@ -1,0 +1,14 @@
+{
+  "name": "androidcode",
+  "version": "1.0.0",
+  "description": "Android可视化工具",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "二流小码农",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^15.0.0"
+  }
+}
