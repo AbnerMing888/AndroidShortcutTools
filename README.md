@@ -1,6 +1,6 @@
 # AndroidShortcutTools
 Android自动生成代码，可视化脚手架
-#### 欢迎关注我的微信公众号：Android干货铺，(微信扫一扫)<br/>
+#### 欢迎关注我的微信公众号：微信搜一搜：Android干货铺，(或扫一扫下面的二维码)<br/>
 <img src="image/abner.jpg" width="120" height="120" alt="微信公众号"/><br/>
 
 #### 文件目录：
@@ -22,7 +22,7 @@ windows下安装包，mac或其他请访问官网进行下载：https://nodejs.o
 
 ##### 4、注意事项
 
-1、源码中没包含node编译后的文件，也就是node_modules目录，太大了上传不上去，大家按照环境搭建那天的课程，一步一步的执行，自己来生成node_modules，其他的都可以参考源码。
+1、源码中没包含node编译后的文件，也就是node_modules目录，太大了上传不上去，大家按照第二章环境搭建那天的课程，一步一步的执行，自己来生成node_modules，其他的都可以参考源码。
 
 
 
