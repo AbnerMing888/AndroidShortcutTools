@@ -11,7 +11,7 @@ Android自动生成代码，可视化脚手架
 #### 当前效果展示
 |  基础配置页  |  Shape生成页  |
 |  ----  |  ----  |
-|  <img src="image/tool_0.jpg" width="120"  alt="基础配置页"/>  |  <img src="image/tool_1.jpg" width="120"  alt="Shape生成页"/>  |
+|  <img src="image/tool_0.jpg" width="400"  alt="基础配置页"/>  |  <img src="image/tool_1.jpg" width="400"  alt="Shape生成页"/>  |
 
 
 #### 文件目录：
