@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Shape生成</title>
+    <link rel="stylesheet" type="text/css" href="coloris.min.css"/>
+    <script>if (typeof module === 'object') {
+        window.module = module;
+        module = undefined;
+    }</script>
+    <script src="../jquery-2.2.0.min.js"></script>
+    <script src="coloris.min.js"></script>
+    <script src="shape.js"/>
+    <script>if (window.module) module = window.module;</script>
+    <style>
+        .shape_tag_0 {
+            color: #d43c3c;
+            font-weight: bold;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        .shape_file {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .shape_file div {
+            width: 20%;
+            height: 30px;
+            line-height: 30px;
+            color: #222222;
+            float: left;
+            border: 0.5px solid #e8e8e8;
+        }
+
+        .input_rect {
+            margin-top: 10px;
+            color: #d43c3c;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .input_rect input {
+            width: 60%;
+            height: 20px;
+            margin-left: 10px;
+        }
+
+        .shape_submit {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .shape_submit span {
+            cursor: pointer;
+            padding: 10px 70px;
+            border-radius: 5px;
+            color: #ffffff;
+            background-color: #d43c3c;
+        }
+
+        .input_rect3, .input_rect4, .input_rect5, .input_rect_color {
+            display: none;
+        }
+
+        .getName {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .input_rect10 {
+            margin-top: 10px;
+        }
+
+        .input_rect10 input {
+            width: auto;
+            height: 10px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body style="margin-left: 10px;">
+<div>
+
+    <div class="shape_select_file">
+        <div class="shape_tag_0">选择对应生成文件夹</div>
+        <div class="shape_file">
+
+        </div>
+    </div>
+
+    <div style="clear: left;"></div>
+    <div class="shape_tag_0">选择类型</div>
+    <div style="margin-top: 10px;">
+        <label><input type="radio" name="shapeType" value="0" checked/>实心</label>
+        <label><input type="radio" name="shapeType" value="1"/>空心</label>
+        <label><input type="radio" name="shapeType" value="2"/>渐变</label>
+    </div>
+    <div class="shape_tag_0">选择方向<span style="color: #222222;font-size: 10px;">（默认全选）</span></div>
+    <div style="margin-top: 10px;">
+        <label>左上<input type="checkbox" value="0"/></label>
+        <label>右上<input type="checkbox" value="1"/></label>
+        <label>左下<input type="checkbox" value="2"/></label>
+        <label>右下<input type="checkbox" value="3"/></label>
+    </div>
+
+    <div class="input_rect">
+        角度<input type="number" class="input_radius"/>
+    </div>
+    <div class="input_rect input_rect2">
+        颜色<input type="text" style="width: 75%" class="input_color" value="#ff0000" data-coloris/>
+    </div>
+    <div class="input_rect input_rect3">
+        底色<input type="text" style="width: 75%" class="input_solid" value="#ff0000" data-coloris/>
+    </div>
+    <div class="input_rect input_rect4">
+        边色<input type="text" style="width: 75%" class="input_react" value="#ff0000" data-coloris/>
+    </div>
+    <div class="input_rect input_rect5">
+        边宽<input type="number" class="input_react_size"/>
+    </div>
+    <div class="input_rect input_rect_color">
+        <div class="input_rect input_rect6">
+            起始颜色<input type="text" class="input_react_start_color" style="width: 75%" value="#ff0000" data-coloris/>
+        </div>
+        <div class="input_rect input_rect7">
+            中间颜色<input type="text" class="input_react_center_color" style="width: 75%" data-coloris/>
+        </div>
+        <div class="input_rect input_rect8">
+            结束颜色<input type="text" class="input_react_end_color" style="width: 75%" value="#ff0000" data-coloris/>
+        </div>
+        <div class="input_rect input_rect9">
+            渐变角度<input type="number" class="input_react_gradient_radius" placeholder="45的整数倍,如90，180，270，360"/>
+        </div>
+        <div class="input_rect10">
+            <label><input type="radio" name="shapeGradientType" value="0" checked/>线性渐变</label>
+            <label><input type="radio" name="shapeGradientType" value="1"/>放射性渐变</label>
+            <label><input type="radio" name="shapeGradientType" value="2"/>扫描渐变</label>
+        </div>
+    </div>
+    <div class="input_rect">
+        名字<input type="text" class="input_name"/><span class="getName">获取名字</span>
+    </div>
+    <div class="shape_submit">
+        <span>确定</span>
+    </div>
+</div>
+</body>
+</html>

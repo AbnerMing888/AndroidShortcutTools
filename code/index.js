@@ -9,10 +9,12 @@ function createWindow() {
         height: 600,
         resizable: false,//禁止缩放
         webPreferences: {
-            nodeIntegration: true
+            nodeIntegration: true,
+            contextIsolation: false
         }
     })
-
+    require('@electron/remote/main').initialize(); // 初始化
+    require('@electron/remote/main').enable(win.webContents);
     // 加载index.html文件
     win.loadFile('index.html');
     win.setMenu(null);//去除上面一排按钮

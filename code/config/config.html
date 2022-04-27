@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>基础配置</title>
+    <script>if (typeof module === 'object') {
+        window.module = module;
+        module = undefined;
+    }</script>
+    <script src="../jquery-2.2.0.min.js"></script>
+    <script src="config.js"/>
+    <script>if (window.module) module = window.module;</script>
+    <style>
+        .config_top_input {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .config_file_input {
+            width: 60%;
+            height: 30px;
+        }
+
+        .select_file {
+            font-size: 16px;
+            font-weight: bold;
+            margin-left: 10px;
+            cursor: pointer;
+            color: #222222;
+        }
+
+        .select_file:hover {
+            color: #d43c3c;
+        }
+
+        .config_select_div {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .config_desc {
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 30px;
+        }
+
+        .config_input {
+            width: 100%;
+            height: 30px;
+        }
+
+        .config_submit {
+            text-align: center;
+            color: #ffffff;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        .config_submit span {
+            cursor: pointer;
+            background-color: #d43c3c;
+            padding: 6px 40px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="config_top_input">
+        <!--选择路径-->
+        <input class="config_file_input" readonly="readonly"/>
+    </div>
+    <div class="config_select_div">
+        <span class="select_file">选择项目生成路径</span>
+    </div>
+    <div class="config_desc">
+        <span style="color: #d43c3c;font-size: 12px">
+             *
+        </span>
+        <span style="color: #666666;font-size: 12px">
+           选择项目生成路径，是便于各个功能文件的存储，每次选择之后，都会对您的选择进行储存，<strong>一般而言，相同的项目，您只选择一次即可</strong>。
+        </span>
+        <div style="color: #666666;font-size: 12px;margin-top: 5px;">
+            <span><strong>注意：</strong>如果选择的是Android项目，各个文件会生成相对应的目录下</span>
+        </div>
+
+        <div style="margin-top: 20px;">
+            <input placeholder="dp前缀" class="config_input"/>
+            <div style="margin-top: 5px;">
+                <span style="font-size: 11px;color: #d43c3c;">根据自己项目的dimens文件，来设置，一般是固定的，例如：@dimen/common_dp_20,固定的前缀就是@dimen/common_dp_</span>
+            </div>
+        </div>
+        <div style="margin-top: 10px;">
+            <input placeholder="color前缀" class="config_input"/>
+            <div style="margin-top: 5px;">
+                <span style="font-size: 11px;color: #d43c3c;">根据自己项目的color文件，来设置，一般是固定的，例如：@color/common_color_ff0000,固定的前缀就是@color/common_color_</span>
+            </div>
+        </div>
+    </div>
+    <div class="config_submit">
+        <span>确定</span>
+    </div>
+</div>
+</body>
+</html>
