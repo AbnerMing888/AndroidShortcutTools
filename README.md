@@ -8,7 +8,7 @@ Android自动生成代码，可视化脚手架
 时间：2022年4月27日
 更新内容：新增配置页和动态生成shape页
 ```
-#### 当前效果展示
+#### 截至第四章内容的效果展示
 |  基础配置页  |  Shape生成页  |
 |  ----  |  ----  |
 |  <img src="image/tool_0.jpg" width="400"  alt="基础配置页"/>  |  <img src="image/tool_1.jpg" width="400"  alt="Shape生成页"/>  |
