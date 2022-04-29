@@ -11,5 +11,9 @@
   "devDependencies": {
     "@electron/remote": "^2.0.8",
     "electron": "^15.0.0"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.9",
+    "app-info-parser": "^1.1.3"
   }
 }

@@ -51,7 +51,7 @@
 </body>
 <script>
     //定义按钮数组
-    const mItems = ["基础配置", "Shape生成"];
+    const mItems = ["基础配置", "Shape生成", "多渠道打包"];
     eachLeftNode();
 
     function eachLeftNode() {
@@ -79,7 +79,11 @@
         switch (position) {
             case 1://Shape生成
                 srcPath = "shape/shape.html";
-                break
+                break;
+            case 2://多渠道打包
+                srcPath = "python/python.html";
+                break;
+
         }
         $(".right_iframe").attr("src", srcPath);
     }

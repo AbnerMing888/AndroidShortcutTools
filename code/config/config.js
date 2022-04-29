@@ -24,6 +24,7 @@ $(function () {
     $(".select_file").click(function () {
         //选择文件
         dialog.showOpenDialog({
+            title:'请选择您的项目文件，尽量是Android项目哦~',
             properties: ['openDirectory']
         }).then(result => {
             const path = result.filePaths;
@@ -34,7 +35,7 @@ $(function () {
                 localStorage.setItem("select_path", path)
             }
 
-        })
+        });
     });
 
     //确定点击

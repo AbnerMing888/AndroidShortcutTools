@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>多渠道打包</title>
+    <script>if (typeof module === 'object') {
+        window.module = module;
+        module = undefined;
+    }</script>
+    <script src="../jquery-2.2.0.min.js"></script>
+    <script src="python.js"></script>
+    <style>
+        .python_submit {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .python_submit span {
+            color: #ffffff;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #d43c3c;
+            padding: 6px 30px;
+        }
+
+        input {
+            width: 80%;
+            height: 30px;
+        }
+
+        .selectSpan {
+            font-size: 14px;
+            color: #d43c3c;
+            font-weight: bold;
+            cursor: pointer;
+            margin-left: 15px;
+        }
+
+        textarea {
+            width: 95%;
+            height: 200px;
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <input class="apk_in_path" readonly/><span class="selectSpan selectInApk">选择apk</span>
+</div>
+<div style="margin-top: 20px;">
+    <input class="apk_out_path" readonly/><span class="selectSpan selectOutApk">选择输出路径</span>
+</div>
+<div style="margin-top: 20px;font-size: 14px;">
+    <span style="color: #d43c3c;font-weight: bold">*</span>设置渠道id,一行设置一个(首次设置完之后会进行保存)
+</div>
+<div style="margin-top: 5px;">
+    <textarea class="channelText"></textarea>
+</div>
+<div class="python_submit">
+    <span>确定</span>
+</div>
+
+</body>
+</html>
