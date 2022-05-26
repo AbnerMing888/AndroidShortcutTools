@@ -6,13 +6,13 @@ Android自动生成代码，可视化脚手架
 #### 最新更新
 ```
 时间：2022年5月26日
-更新内容：新增对象成功
+更新内容：新增对象生成
 ```
 #### 截至第五章内容的效果展示
 |  基础配置页  |  Shape生成页  |
 |  ----  |  ----  |
 |  <img src="image/tool_0.jpg" width="400"  alt="基础配置页"/>  |  <img src="image/tool_1.jpg" width="400"  alt="Shape生成页"/>  |
-|  <img src="image/tool_2.jpg" width="400"  alt="多渠道打包"/>  |    |
+|  <img src="image/tool_2.jpg" width="400"  alt="多渠道打包"/>  |  <img src="image/tool_3.jpg" width="400"  alt="对象生成"/>  |
 
 
 #### 文件目录：
