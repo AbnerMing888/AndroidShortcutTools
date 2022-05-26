@@ -32,7 +32,7 @@
 
         .right_iframe {
             width: 100%;
-            height: 560px;
+            height: 660px;
             border-left: 1px solid #e8e8e8;
         }
     </style>
@@ -51,7 +51,7 @@
 </body>
 <script>
     //定义按钮数组
-    const mItems = ["基础配置", "Shape生成", "多渠道打包"];
+    const mItems = ["基础配置", "Shape生成", "对象生成", "多渠道打包"];
     eachLeftNode();
 
     function eachLeftNode() {
@@ -80,7 +80,10 @@
             case 1://Shape生成
                 srcPath = "shape/shape.html";
                 break;
-            case 2://多渠道打包
+            case 2://对象生成
+                srcPath = "data/data.html";
+                break;
+            case 3://多渠道打包
                 srcPath = "python/python.html";
                 break;
 

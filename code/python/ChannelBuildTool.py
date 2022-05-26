@@ -10,7 +10,7 @@ f = open(src_empty_file, 'w')
 f.close()
 
 # 获取当前目录中apk源包
-src_apk = 'F:\\test\dd\\test.apk' #apk地址
+src_apk = 'F:\\test\\test.apk' #apk地址
 
 # 获取渠道列表
 channel_file = 'python/info/channel.txt'
@@ -28,7 +28,7 @@ src_apk_name = temp_list[0]
 src_apk_extension = temp_list[1]
 
 # 创建生成目录,与文件名相关  输出的apk地址
-output_dir = 'F:\\test\dd\\'+'output_'+src_apk_name+'\\'
+output_dir = 'F:\\test\\'+'output_'+src_apk_name+'\\'
 # 目录不存在则创建
 if not os.path.exists(output_dir):
    os.mkdir(output_dir)
@@ -40,7 +40,7 @@ for line in lines:
    # 拼接对应渠道号的apk
    target_apk = output_dir + src_apk_name + "-" + target_channel + src_apk_extension
    # 拷贝建立新apk  apk地址
-   shutil.copy('F:\\test\dd\\test.apk',  target_apk)
+   shutil.copy('F:\\test\\test.apk',  target_apk)
    # zip获取新建立的apk文件
    zipped = zipfile.ZipFile(target_apk, 'a', zipfile.ZIP_DEFLATED)
    # 初始化渠道信息

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对象生成</title>
+    <link rel="stylesheet" type="text/css" href="data.css"/>
+    <script>if (typeof module === 'object') {
+        window.module = module;
+        module = undefined;
+    }</script>
+    <script src="../jquery-2.2.0.min.js"></script>
+    <script src="data.js"/>
+    <script>if (window.module) module = window.module;</script>
+</head>
+<body>
+
+<div>
+
+    <div class="data_select_file">
+        <div class="data_tag">*选择对应生成文件夹</div>
+        <div class="data_file">
+
+        </div>
+    </div>
+
+    <div style="clear: left;"></div>
+    <div class="data_tag">模拟请求接口</div>
+
+    <div style="margin-top: 10px;">
+        <input placeholder="请输入接口地址" class="data_http_url"/>
+    </div>
+    <div style="margin-top: 10px;">
+        <input placeholder="接口请求头参数(key0=value0 key1=value1)中间空格" class="data_http_head"/>
+    </div>
+    <div style="margin-top: 10px;">
+        <input placeholder="接口请求参数(key0=value0 key1=value1)中间空格" class="data_http_arguments"/>
+    </div>
+    <div class="data_tag">请求方式</div>
+    <div>
+        <label><input type="radio" name="method" value="0"/>Get</label>
+        <label><input type="radio" name="method" value="1"/>Post</label>
+        <label><input type="radio" name="method" value="2"/>Body</label>
+    </div>
+    <div class="data_tag">*接口返回Json数据<span class="request_http">发起请求</span></div>
+    <textarea style="resize: none" class="data_content"></textarea>
+    <div style="margin-top: 10px;">
+        <span style="color: #d43c3c;">*对象名字</span><input style="margin-left: 10px;" type="text" class="data_name"/>
+    </div>
+    <div style="text-align: center;margin-top: 10px">
+        <label><input type="radio" name="beanExtend" value="0" checked/>继承父类</label>
+        <label><input type="radio" name="beanExtend" value="1"/>不继承</label>
+    </div>
+    <div class="action_submit">
+        <span>确定</span>
+    </div>
+</div>
+
+</body>
+</html>

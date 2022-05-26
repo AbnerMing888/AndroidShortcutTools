@@ -50,7 +50,7 @@ $(function () {
                         && item != "build" && item != "gradle"
                         && item.indexOf(".") != 0) {
                         var vItem = item;
-                        if (item.length > 9) {
+                        if (item.length > 7) {
                             item = item.substr(0, 7) + "…";
                         }
                         //是文件
@@ -123,7 +123,7 @@ $(function () {
                         booDrawable = true;
                     }
                 });
-
+                //存在
                 if (booDrawable) {
                     writeDrawable(endPath, endShapeText);
                 } else {
@@ -163,7 +163,7 @@ $(function () {
             });
     }
 
-    //获取实心的代码
+    //获取空心也就是带有边框的代码
     function getStrokeText(radius, solid, react, reactSize, checkText) {
         //不为空
         if (radius != "" && radius != null && selectDp != null && selectDp != "") {

@@ -121,10 +121,12 @@ $(function () {
         let endName = filePath.substring(endPosition + 1, filePath.length)
 
         apkInPath = apkInPath.replaceAll("\\n", "\\\\n")
-            .replaceAll("\\t", "\\\\t");
+            .replaceAll("\\t", "\\\\t")
+            .replaceAll("\\a", "\\\\a");
 
         apkOutPath = apkOutPath.replaceAll("\\n", "\\\\n")
-            .replaceAll("\\t", "\\\\t");
+            .replaceAll("\\t", "\\\\t")
+            .replaceAll("\\a", "\\\\a");
 
         let channel = "# coding=utf-8\n" +
             "import zipfile\n" +

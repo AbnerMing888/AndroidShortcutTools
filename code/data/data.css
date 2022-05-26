@@ -1,0 +1,63 @@
+.data_tag {
+    color: #d43c3c;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.data_file {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.data_file div {
+    width: 20%;
+    height: 30px;
+    line-height: 30px;
+    color: #222222;
+    float: left;
+    border: 0.5px solid #e8e8e8;
+}
+
+.data_http_url, .data_http_head, .data_http_arguments {
+    width: 80%;
+    height: 20px;
+}
+
+.request_http {
+    margin-left: 20px;
+    border: 1px solid #d43c3c;
+    border-radius: 3px;
+    font-size: 12px;
+    padding: 2px 8px;
+    cursor: pointer;
+}
+
+.request_http:hover {
+    color: #ffffff;
+    background-color: #d43c3c;
+}
+
+textarea {
+    width: 80%;
+    height: 180px;
+}
+
+.data_name {
+    width: 60%;
+    height: 20px;
+}
+
+.action_submit {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.action_submit span {
+    cursor: pointer;
+    padding: 10px 70px;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #d43c3c;
+}
