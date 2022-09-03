@@ -34,7 +34,20 @@ https://nodejs.org
 
 #### 4、教程地址
 
-公众号第一时间发布，其他平台略有延迟，还请各位老铁，多多关注公众号。
+公众号【Android干货铺】第一时间发布，其他平台略有延迟，还请各位老铁，多多关注公众号。
+
+##### 教程目录
+
+[第1章：Android自动生成代码，可视化脚手架，将大大提高开发效率](https://mp.weixin.qq.com/s/fuug8twCWoha192-befv2g)
+
+[第2章：Android自动生成代码，可视化脚手架之环境搭建](https://mp.weixin.qq.com/s/c7899q84AGVgRCMj5rhykg)
+
+[第3章：Android自动生成代码，可视化脚手架之基本信息配置](https://mp.weixin.qq.com/s/JnEBaoZHyqMN3Md_fAbr2w)
+
+[第4章：Android自动生成Shape资源文件，迈出可视化脚手架第一步！（上）](https://mp.weixin.qq.com/s/1AmdGe6fl9X9ED-0eob4tA)
+
+[第5章：Android自动生成Shape资源文件（下）](https://mp.weixin.qq.com/s/IidunPDTrEslsUJQmqSGzg)
+
 
 #### 5、注意事项
 
@@ -47,7 +60,6 @@ https://nodejs.org
 |  ----  |  ----  |
 |  <img src="image/tool_0.jpg" width="400"  alt="基础配置页"/>  |  <img src="image/tool_1.jpg" width="400"  alt="Shape生成页"/>  |
 |  多渠道打包  |  对象生成  |
-|  ----  |  ----  |
 |  <img src="image/tool_2.jpg" width="400"  alt="多渠道打包"/>  |  <img src="image/tool_3.jpg" width="400"  alt="对象生成"/>  |
 
 
